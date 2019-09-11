@@ -1,1 +1,1 @@
-[Link](jackrhumphrey.com)
+[Link](https://jackrhumphrey.com)
