@@ -1,0 +1,9 @@
+.widget img{
+    max-width:100%;
+}
+
+.widget2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
