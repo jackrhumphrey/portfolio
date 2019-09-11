@@ -32,7 +32,7 @@ class Work extends Component {
             </div>
           </a>
           <p>
-            <a href="https://jackrhumphrey.github.io/graph">Graph project</a>
+            <a href="https://jackrhumphrey.github.io/graph">Graph project</a> | <a href="https://github.com/jackrhumphrey/graph">GitHub</a>
             <br />
             Research project based on music and mathematical structures, HTML5
             canvas
