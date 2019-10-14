@@ -10,21 +10,22 @@ class About extends Component {
           development, with a focus on usability and simplicity of design.
         </p>
         <p>
-          Outside of development, my interests include art and design, including
-          painting and illustration. I am a keen pianist and hold a DipABRSM in
-          piano performance. I also enjoy writing and producing my own music. I
-          also have an bachelors degree in Mathematics, which has informed some
-          of my endeavors in development.
+          Outside of development, my interests include painting and
+          illustration. I am a keen pianist and hold a DipABRSM in piano
+          performance. I also enjoy creating my own music. My bachelors degree
+          was in Mathematics, which has helped inform my foray into development.
         </p>
         <p>
           I hold a Masters degree in Software Development from the Wellington
-          ICT Graduate School. I have a broad foundation in development, as well
-          as strong communication skills. Since then, I have been working on
-          various projects including client work to widen my skills as a
-          developer. My preferred tech stack is JavaScript with React, and I
-          also love using HTML and CSS to create responsive web apps.
+          ICT Graduate School, where I received a broad foundation in
+          development, as well as acquiring communication skills as a developer.
+          Since then, I have been working on various projects, including client
+          work, and widening my skills as a developer. My preferred tech stack
+          uses JavaScript with React.
         </p>
-        <p>I also tutor in computer science and work as a piano accompanist.</p>
+        <p>
+          I also tutor in computer science, and work as a piano accompanist.
+        </p>
       </div>
     );
   }
