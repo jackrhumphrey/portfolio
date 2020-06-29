@@ -12,13 +12,13 @@ class Work extends Component {
     return (
       <div className="work">
         <div>
-          <a href="https://cubastreetculinarytours.com">
+          <a href="https://cuba-street.netlify.app">
             <div className="image">
               <img src={cuba} />
             </div>
           </a>
           <p>
-            <a href="https://cubastreetculinarytours.com">
+            <a href="https://cuba-street.netlify.app">
               Cuba Street Culinary Tours
             </a>
             <br />

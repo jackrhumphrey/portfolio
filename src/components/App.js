@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { Component } from "react";
-import $ from "jquery";
 
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import About from "./About";

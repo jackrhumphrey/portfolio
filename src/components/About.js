@@ -13,15 +13,14 @@ class About extends Component {
           Outside of development, my interests include painting and
           illustration. I am a keen pianist and hold a DipABRSM in piano
           performance. I also enjoy creating my own music. My bachelors degree
-          was in Mathematics, which has helped inform my foray into development.
+          was in Mathematics.
         </p>
         <p>
           I hold a Masters degree in Software Development from the Wellington
-          ICT Graduate School, where I received a broad foundation in
-          development, as well as acquiring communication skills as a developer.
-          Since then, I have been working on various projects, including client
-          work, and widening my skills as a developer. My preferred tech stack
-          uses JavaScript with React.
+          ICT Graduate School, where I learned development, as well as
+          communication skills as a developer. Since then, I have been working
+          on various projects, including client work. My preferred tech stack
+          uses React.
         </p>
         <p>
           I also tutor in computer science, and work as a piano accompanist.
