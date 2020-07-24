@@ -1,0 +1,10 @@
+.kunekt img{
+    max-width:100%;
+}
+
+.kunekt{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}

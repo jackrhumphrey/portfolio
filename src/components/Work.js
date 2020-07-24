@@ -1,4 +1,5 @@
 import "./Work.css";
+import kunekt from "./KunektPreview.png";
 import naclo from "./naclo.png";
 import cuba from "./cuba.png";
 import graph from "./graph.png";
@@ -11,6 +12,20 @@ class Work extends Component {
   render() {
     return (
       <div className="work">
+                <div>
+                <Link to={"/work/kunekt"}>
+            <div className="image">
+              <img src={kunekt} />
+            </div>
+          </Link>
+          <p>
+          <Link to={"/work/kunekt"}>
+              Kunekt
+              </Link>
+            <br />
+            Mobile app
+          </p>
+        </div>
         <div>
           <a href="https://cuba-street.netlify.app">
             <div className="image">
