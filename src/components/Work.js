@@ -1,4 +1,5 @@
 import "./Work.css";
+import imy from "./imyblinky.png";
 import kunekt from "./KunektPreview.png";
 import naclo from "./naclo.png";
 import cuba from "./cuba.png";
@@ -12,16 +13,27 @@ class Work extends Component {
   render() {
     return (
       <div className="work">
-                <div>
-                <Link to={"/work/kunekt"}>
+        <div>
+          <a href="https://imyblinky.com">
+            <div className="image">
+              <img src={imy} />
+            </div>
+          </a>
+          <p>
+            <a href="https://imyblinky.com">Imy Blinky</a>
+            <br />
+            Artist website
+          </p>
+        </div>
+
+        <div>
+          <Link to={"/work/kunekt"}>
             <div className="image">
               <img src={kunekt} />
             </div>
           </Link>
           <p>
-          <Link to={"/work/kunekt"}>
-              Kunekt
-              </Link>
+            <Link to={"/work/kunekt"}>Kunekt</Link>
             <br />
             Mobile app
           </p>
@@ -47,7 +59,8 @@ class Work extends Component {
             </div>
           </a>
           <p>
-            <a href="https://jackrhumphrey.github.io/graph">Graph project</a> | <a href="https://github.com/jackrhumphrey/graph">GitHub</a>
+            <a href="https://jackrhumphrey.github.io/graph">Graph project</a> |{" "}
+            <a href="https://github.com/jackrhumphrey/graph">GitHub</a>
             <br />
             Research project based on music and mathematical structures, HTML5
             canvas
