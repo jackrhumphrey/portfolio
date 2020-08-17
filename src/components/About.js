@@ -15,7 +15,7 @@ class About extends Component {
           University of Wellington.
         </p>
         <p>
-          My interests include art and illustration. I also am a keen pianist
+          My interests include art and design. I also am a keen pianist
           and hold a DipABRSM in piano performance.
         </p>
       </div>
