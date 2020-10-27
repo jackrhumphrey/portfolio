@@ -1,6 +1,7 @@
 body {
   background: #00a;
   color: #fff;
+  height: auto;
 }
 
 .wrapper {
@@ -123,6 +124,9 @@ li {
   }
   .nav {
     position: inline;
+  }
+  .content {
+    padding-top: 0px;
   }
 }
 

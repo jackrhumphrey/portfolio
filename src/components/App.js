@@ -8,25 +8,6 @@ import Contact from "./Contact";
 import ScrollToTop from "./ScrollToTop";
 
 class App extends Component {
-  // componentDidMount() {
-  //   $(function() {
-  //     var $sidebar = $("#sidebar"),
-  //       $window = $(window),
-  //       offset = $sidebar.offset();
-
-  //     $window.scroll(function() {
-  //       if ($window.scrollTop() > offset.top) {
-  //         $sidebar.stop(true).css({
-  //           marginTop: $window.scrollTop() - offset.top
-  //         });
-  //       } else {
-  //         $sidebar.stop(true).css({
-  //           marginTop: 0
-  //         });
-  //       }
-  //     });
-  //   });
-  // }
 
   render() {
     return (
