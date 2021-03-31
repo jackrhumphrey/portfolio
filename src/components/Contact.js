@@ -2,7 +2,13 @@ import './Contact.css';
 import React, { useState, useEffect } from 'react';
 import { Form, Button } from "semantic-ui-react";
 
-function Contact () {
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+function Contact() {
 
   const [obj, setObj] = useState({
     name: "",
@@ -12,15 +18,27 @@ function Contact () {
 
   const [success, setSuccess] = useState(false);
 
-  useEffect(() => {
-    if (window.location.search.includes('success=true')) {
-      setSuccess(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.search.includes('success=true')) {
+  //     setSuccess(true);
+  //   }
+  // }, []);
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
 
   return (
     <div>
-      <Form name="contact" method="POST" data-netlify="true">
+      <Form onSubmit={this.handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <Form.Input
           label="Name"
