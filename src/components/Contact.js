@@ -22,9 +22,11 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...obj })
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        setObj({ name: "", email: "", message: "" });
+        alert("Thank you for your message!");
+      })
       .catch(error => alert(error));
-
     e.preventDefault();
   };
 
@@ -54,9 +56,6 @@ function Contact() {
         />
         <Button type="submit">Submit</Button>
       </Form>
-      {/* {success && (
-        <p style={{ color: "green" }}>Thank you for your message! </p>
-      )} */}
     </div>
   )
 }
