@@ -1,4 +1,5 @@
 import "./Work.css";
+import colour from "./colour.png";
 import imy from "./imyblinky.png";
 import kunekt from "./KunektPreview.png";
 import naclo from "./naclo.png";
@@ -13,6 +14,20 @@ class Work extends Component {
   render() {
     return (
       <div className="work">
+        <div>
+          <a href="https://jackrhumphrey.github.io/colour">
+            <div className="image">
+              <img src={colour} />
+            </div>
+          </a>
+          <p>
+          <a href="https://jackrhumphrey.github.io/colour">Colour Mixer</a> |{" "}
+            <a href="https://github.com/jackrhumphrey/colour">GitHub</a>            
+            <br />
+            Online tool for mixing colours
+          </p>
+        </div>
+
         <div>
           <a href="https://imyblinky.com">
             <div className="image">

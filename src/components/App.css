@@ -1,6 +1,7 @@
 body {
   background: #00a;
   color: #fff;
+  height: auto;
 }
 
 .wrapper {
@@ -128,7 +129,10 @@ li {
     flex-direction: column;
   }
   .nav {
-    position: inline;
+    position: relative;
+  }
+  .content {
+    padding-top: 0px;
   }
 }
 
