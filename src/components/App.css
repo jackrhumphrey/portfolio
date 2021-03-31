@@ -90,6 +90,12 @@ a:active {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .nav div, .nav ul {
+    animation: none;
+  }
+}
+
 li .active,
 li .active:hover {
   text-decoration: underline;
@@ -126,7 +132,7 @@ li {
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: "Adobe Caslon Pro";
   src: url("../../src/CaslonPro/ACaslonPro-Semibold.eot");
   src: local("Adobe Caslon Pro Semibold"), local("ACaslonPro-Semibold"),
@@ -199,7 +205,7 @@ li {
   font-style: italic;
 }
 
-/* .about {
+.about {
   font-family: Adobe Caslon Pro, Times, Times New Roman, serif;
   font-weight: 400;
   letter-spacing: 0;
