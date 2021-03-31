@@ -1,5 +1,5 @@
 import './Contact.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Form, Button } from "semantic-ui-react";
 
 const encode = (data) => {
@@ -16,15 +16,7 @@ function Contact() {
     message: "",
   });
 
-  const [success, setSuccess] = useState(false);
-
-  // useEffect(() => {
-  //   if (window.location.search.includes('success=true')) {
-  //     setSuccess(true);
-  //   }
-  // }, []);
-
-  handleSubmit = e => {
+  const handleSubmit = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -38,7 +30,7 @@ function Contact() {
 
   return (
     <div>
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <Form.Input
           label="Name"
@@ -62,9 +54,9 @@ function Contact() {
         />
         <Button type="submit">Submit</Button>
       </Form>
-      {success && (
+      {/* {success && (
         <p style={{ color: "green" }}>Thank you for your message! </p>
-      )}
+      )} */}
     </div>
   )
 }
