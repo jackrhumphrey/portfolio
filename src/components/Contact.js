@@ -2,13 +2,7 @@ import './Contact.css';
 import React, { useState, useEffect } from 'react';
 import { Form, Button } from "semantic-ui-react";
 
-// const encode = (data) => {
-//     return Object.keys(data)
-//       .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//       .join("&");
-//   };  
-
-const Contact = () => {
+function Contact () {
 
   const [obj, setObj] = useState({
     name: "",
