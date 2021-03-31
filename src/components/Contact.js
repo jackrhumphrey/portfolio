@@ -1,48 +1,64 @@
 import './Contact.css';
-import React, { Component } from 'react';
+import React from 'react';
+import { Form, Button } from "semantic-ui-react";
 
-class Contact extends Component {
+const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };  
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-        }
-    }
+const Contact = () => {
 
-    render() {
-        return (
-            <div>
-                <form method="POST" action="http://formspree.io/jack.humphrey@xtra.co.nz" className="ui form">
-                    <div className="field">
-                        <label>Name</label>
-                        <input type="text" id="name" name="Name"
-                            value={this.state.name}
-                            onChange={e => this.setState({ name: e.target.value })}
-                        />
-                    </div>
-                    <div className="field">
-                        <label>Email</label>
-                        <input type="email" id="email" name="_replyto"
-                            value={this.state.email}
-                            onChange={e => this.setState({ email: e.target.value })}
-                        />
-                    </div>
-                    <div className="field">
-                        <label>Message</label>
-                        <textarea id="message" name="message"
-                            onChange={e => this.setState({ message: e.target.value })}
-                            value={this.state.message}
-                        ></textarea>
-                    </div>
-                    <input className="ui button" type="submit" value="Send" />
-                </form >
-            </div>
-        )
-    }
-};
+    const [obj, setObj] = React.useState({
+        name: "",
+        email: "",
+        message: "",
+      });
+    
+      const handleSubmit = (e) => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...obj }),
+        })
+          .then(() => {
+            setObj({ name: "", email: "", message: "" });
+            alert("Success!");
+          })
+          .catch((error) => alert(error));
+    
+        e.preventDefault();
+      };
+
+    return (
+        <div>
+            <Form onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
+                <Form.Input
+                    label="Name"
+                    type="text"
+                    name="name"
+                    value={obj.name}
+                    onChange={(e) => setObj({ ...obj, name: e.target.value })}
+                />
+                <Form.Input
+                    label="Email"
+                    type="email"
+                    name="email"
+                    value={obj.email}
+                    onChange={(e) => setObj({ ...obj, email: e.target.value })}
+                />
+                <Form.TextArea
+                    label="Message"
+                    name="message"
+                    value={obj.message}
+                    onChange={(e) => setObj({ ...obj, message: e.target.value })}
+                />
+                <Button type="submit">Submit</Button>
+            </Form>
+        </div>
+    )
+}
 
 export default Contact;
