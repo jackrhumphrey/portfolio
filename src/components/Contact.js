@@ -2,11 +2,11 @@ import './Contact.css';
 import React from 'react';
 import { Form, Button } from "semantic-ui-react";
 
-const encode = (data) => {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };  
+// const encode = (data) => {
+//     return Object.keys(data)
+//       .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//       .join("&");
+//   };  
 
 const Contact = () => {
 
@@ -16,25 +16,24 @@ const Contact = () => {
         message: "",
       });
     
-      const handleSubmit = (e) => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...obj }),
-        })
-          .then(() => {
-            setObj({ name: "", email: "", message: "" });
-            alert("Success!");
-          })
-          .catch((error) => alert(error));
+      // const handleSubmit = (e) => {
+      //   fetch("/", {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      //     body: encode({ "form-name": "contact", ...obj }),
+      //   })
+      //     .then(() => {
+      //       setObj({ name: "", email: "", message: "" });
+      //       alert("Success!");
+      //     })
+      //     .catch((error) => alert(error));
     
-        e.preventDefault();
-      };
+      //   e.preventDefault();
+      // };
 
     return (
         <div>
-            <Form onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="contact" />
+            <Form name="contact" method="POST" data-netlify="true">
                 <Form.Input
                     label="Name"
                     type="text"
