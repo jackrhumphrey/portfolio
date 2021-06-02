@@ -6,4 +6,5 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 25px;
+    margin-bottom: 25px;
 }
