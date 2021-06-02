@@ -20,7 +20,7 @@ class Weave extends Component {
                 </div></div>
                 <div>
                     <p>
-                        Screenshots of web app from Weave Talent Startup weekend team.</p>
+                        Screenshots of Weave Talent web app from Startup Weekend Wellington 2020.</p>
                     <p>
                         Result: third place team.
                     </p>
