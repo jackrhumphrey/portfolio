@@ -102,9 +102,8 @@ class Work extends Component {
           </a>
           <p>
             <a href="https://jackrhumphrey.github.io/Assignment">
-              Sample layout |{" "}
+              Sample layout</a> |{" "}
             <a href="https://github.com/jackrhumphrey/Assignment">GitHub</a>
-            </a>
             <br />
             Sample layout and code
           </p>
