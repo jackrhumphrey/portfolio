@@ -1,16 +1,16 @@
-.work {
+.weave{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
 }
 
-.image img {
+.weave img {
     width: 100%;
     height: calc(100% / 1.5);
 }
 
 @media screen and (max-width: 1023px) {
-    .work {
+    .weave {
         grid-template-columns: 1fr;
     }
 }

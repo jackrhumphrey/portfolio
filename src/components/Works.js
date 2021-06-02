@@ -5,6 +5,7 @@ import Work from "./Work";
 import Sheep from "./Sheep";
 import Widget from "./Widget";
 import Kunekt from "./Kunekt";
+import Weave from "./Weave";
 
 class Works extends Component {
   render() {
@@ -14,6 +15,7 @@ class Works extends Component {
         <Route path={`${this.props.match.path}/sheep`} component={Sheep} />
         <Route path={`${this.props.match.path}/widget`} component={Widget} />
         <Route path={`${this.props.match.path}/kunekt`} component={Kunekt} />
+        <Route path={`${this.props.match.path}/weave`} component={Weave} />
       </div>
     );
   }

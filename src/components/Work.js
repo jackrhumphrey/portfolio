@@ -7,6 +7,8 @@ import cuba from "./cuba.png";
 import graph from "./graph.png";
 import widget from "./newssmall.png";
 import sheep from "./sheepsmall.png";
+import layout from "./Layout.png";
+import weave1 from "./Weave1.png";
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 
@@ -21,8 +23,8 @@ class Work extends Component {
             </div>
           </a>
           <p>
-          <a href="https://jackrhumphrey.github.io/colour">Colour Mixer</a> |{" "}
-            <a href="https://github.com/jackrhumphrey/colour">GitHub</a>            
+            <a href="https://jackrhumphrey.github.io/colour">Colour Mixer</a> |{" "}
+            <a href="https://github.com/jackrhumphrey/colour">GitHub</a>
             <br />
             Online tool for mixing colours
           </p>
@@ -38,19 +40,6 @@ class Work extends Component {
             <a href="https://imyblinky.com">Imy Blinky</a>
             <br />
             Artist website
-          </p>
-        </div>
-
-        <div>
-          <Link to={"/work/kunekt"}>
-            <div className="image">
-              <img src={kunekt} />
-            </div>
-          </Link>
-          <p>
-            <Link to={"/work/kunekt"}>Kunekt</Link>
-            <br />
-            Mobile app
           </p>
         </div>
         <div>
@@ -82,15 +71,15 @@ class Work extends Component {
           </p>
         </div>
         <div>
-          <Link to={"/work/sheep"}>
+          <Link to={"/work/kunekt"}>
             <div className="image">
-              <img src={sheep} />
+              <img src={kunekt} />
             </div>
           </Link>
           <p>
-            <Link to={`/work/sheep`}>How many sheep?</Link>
+            <Link to={"/work/kunekt"}>Kunekt</Link>
             <br />
-            Summer of Tech Create Camp project
+            Mobile app
           </p>
         </div>
         <div>
@@ -103,6 +92,45 @@ class Work extends Component {
             <Link to="/widget">PressPatron widget</Link>
             <br />
             Industrial group project based on creating a widget
+          </p>
+        </div>
+        <div>
+          <a href="https://jackrhumphrey.github.io/Assignment">
+            <div className="image">
+              <img src={layout} />
+            </div>
+          </a>
+          <p>
+            <a href="https://jackrhumphrey.github.io/Assignment">
+              Sample layout |{" "}
+            <a href="https://github.com/jackrhumphrey/Assignment">GitHub</a>
+            </a>
+            <br />
+            Sample layout and code
+          </p>
+        </div>
+        <div>
+          <Link to={"/work/weave"}>
+            <div className="image">
+              <img src={weave1} />
+            </div>
+          </Link>
+          <p>
+            <Link to={`/work/weave`}>Weave Talent</Link>
+            <br />
+            Startup Weekend Wellington 2020
+          </p>
+        </div>
+        <div>
+          <Link to={"/work/sheep"}>
+            <div className="image">
+              <img src={sheep} />
+            </div>
+          </Link>
+          <p>
+            <Link to={`/work/sheep`}>How many sheep?</Link>
+            <br />
+            Summer of Tech Create Camp project
           </p>
         </div>
         <div>
