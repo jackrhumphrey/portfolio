@@ -15,11 +15,11 @@ import { Link, withRouter } from "react-router-dom";
 class Work extends Component {
   render() {
     return (
-      <div className="work">
+      <article className="work">
         <div>
           <a href="https://jackrhumphrey.github.io/colour">
             <div className="image">
-              <img src={colour} />
+              <img loading="lazy" src={colour} alt="Colour Mixer" />
             </div>
           </a>
           <p>
@@ -33,7 +33,7 @@ class Work extends Component {
         <div>
           <a href="https://imyblinky.com">
             <div className="image">
-              <img src={imy} />
+              <img loading="lazy" src={imy} alt="Imy Blinky" />
             </div>
           </a>
           <p>
@@ -45,7 +45,7 @@ class Work extends Component {
         <div>
           <a href="https://cuba-street.netlify.app">
             <div className="image">
-              <img src={cuba} />
+              <img loading="lazy" src={cuba} alt="Cuba Street Culinary Tours" />
             </div>
           </a>
           <p>
@@ -59,7 +59,7 @@ class Work extends Component {
         <div>
           <a href="https://jackrhumphrey.github.io/graph">
             <div className="image">
-              <img src={graph} />
+              <img loading="lazy" src={graph} alt="Graph project" />
             </div>
           </a>
           <p>
@@ -73,7 +73,7 @@ class Work extends Component {
         <div>
           <Link to={"/work/kunekt"}>
             <div className="image">
-              <img src={kunekt} />
+              <img loading="lazy" src={kunekt} alt="Kunekt" />
             </div>
           </Link>
           <p>
@@ -85,7 +85,7 @@ class Work extends Component {
         <div>
           <Link to="/work/widget">
             <div className="image">
-              <img src={widget} />
+              <img loading="lazy" src={widget} alt="PressPatron widget" />
             </div>
           </Link>
           <p>
@@ -96,8 +96,8 @@ class Work extends Component {
         </div>
         <div>
           <a href="https://jackrhumphrey.github.io/Assignment">
-            <div className="image">
-              <img src={layout} />
+            <div className="image" alt="Sample layout">
+              <img loading="lazy" src={layout} />
             </div>
           </a>
           <p>
@@ -111,7 +111,7 @@ class Work extends Component {
         <div>
           <Link to={"/work/weave"}>
             <div className="image">
-              <img src={weave1} />
+              <img loading="lazy" src={weave1} alt="Weave Talent" />
             </div>
           </Link>
           <p>
@@ -123,7 +123,7 @@ class Work extends Component {
         <div>
           <Link to={"/work/sheep"}>
             <div className="image">
-              <img src={sheep} />
+              <img loading="lazy" src={sheep} alt="How many sheep?" />
             </div>
           </Link>
           <p>
@@ -135,7 +135,7 @@ class Work extends Component {
         <div>
           <a href="https://jackrhumphrey.github.io/detective">
             <div className="image">
-              <img src={naclo} />
+              <img loading="lazy" src={naclo} alt="NACLO" />
             </div>
           </a>
           <p>
@@ -144,7 +144,7 @@ class Work extends Component {
             Collaboration with high school students for hackathon
           </p>
         </div>
-      </div>
+      </article>
     );
   }
 }

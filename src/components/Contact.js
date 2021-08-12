@@ -35,6 +35,7 @@ function Contact() {
       <Form onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <Form.Input
+          id="email"
           label="Name"
           type="text"
           name="name"
@@ -42,6 +43,7 @@ function Contact() {
           onChange={(e) => setObj({ ...obj, name: e.target.value })}
         />
         <Form.Input
+          id="email"
           label="Email"
           type="email"
           name="email"
@@ -49,6 +51,7 @@ function Contact() {
           onChange={(e) => setObj({ ...obj, email: e.target.value })}
         />
         <Form.TextArea
+          id="message"
           label="Message"
           name="message"
           value={obj.message}
