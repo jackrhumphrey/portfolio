@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-      <article className="about">
+      <div className="about">
         <p>
           My name is Jack Humphrey and I am a software developer based in
           Wellington, New Zealand. I have a focus on front end web development,
@@ -18,7 +18,7 @@ class About extends Component {
           My interests include art and design. I also am a keen pianist
           and hold a DipABRSM in piano performance.
         </p>
-      </article>
+      </div>
     );
   }
 }

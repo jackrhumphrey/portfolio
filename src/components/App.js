@@ -14,7 +14,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <ScrollToTop />
-          <main className="wrapper">
+          <div className="wrapper">
             <div>
               <nav className="nav" id="sidebar">
                 <div>
@@ -34,12 +34,12 @@ class App extends Component {
                 </div>
               </nav>
             </div>
-            <div className="content">
+            <main className="content">
               <Route exact path="/" component={About} />
               <Route path="/work" component={Works} />
               <Route path="/contact" component={Contact} />
-            </div>
-          </main>
+            </main>
+          </div>
         </BrowserRouter>
       </div>
     );

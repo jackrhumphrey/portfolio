@@ -15,7 +15,7 @@ import { Link, withRouter } from "react-router-dom";
 class Work extends Component {
   render() {
     return (
-      <article className="work">
+      <div className="work">
         <div>
           <a href="https://jackrhumphrey.github.io/colour">
             <div className="image">
@@ -144,7 +144,7 @@ class Work extends Component {
             Collaboration with high school students for hackathon
           </p>
         </div>
-      </article>
+      </div>
     );
   }
 }
