@@ -42,7 +42,7 @@ class Work extends Component {
             Artist website
           </p>
         </div>
-        <div>
+        {/* <div>
           <a href="https://cuba-street.netlify.app">
             <div className="image">
               <img loading="lazy" src={cuba} alt="Cuba Street Culinary Tours" />
@@ -55,7 +55,7 @@ class Work extends Component {
             <br />
             Client website
           </p>
-        </div>
+        </div> */}
         <div>
           <a href="https://jackrhumphrey.github.io/graph">
             <div className="image">
